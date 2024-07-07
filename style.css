@@ -1,0 +1,132 @@
+/*body{
+
+    display: flex;
+}
+.container{
+    display: flex;
+    margin: auto;
+    width: 15%;
+    background-color: blue;
+    height: auto;
+}
+.scrh{
+    background-color: rgb(77, 66, 66);
+    text-align: center;
+    border-radius: 4px;
+    width: auto;
+}
+.hg{
+    text-align: center;
+}*/
+
+/*updated by gpt:*/
+
+body {
+    background-image: url(bs.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    background-color: blue;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.hg {
+    text-align: center;
+    flex: 1 1 100%;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scrh {
+    background-color: rgb(77, 66, 66);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.scrg{
+    background-color: rgb(77, 66, 66);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.btnn button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnn button:hover {
+    background-color: #555;
+}
+
+.ress {
+    text-align: center;
+    flex: 1 1 100%;
+    margin: 10px;
+}
+
+.ress button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ress button:hover {
+    background-color: darkred;
+}
+
+@media (min-width: 600px) {
+    .hg {
+        flex: 1 1 45%;
+    }
+
+    .ress {
+        flex: 1 1 100%;
+        order: -1;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .hg, .ress {
+        flex: 1;
+    }
+}
+
